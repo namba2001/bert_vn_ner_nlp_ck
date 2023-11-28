@@ -10,7 +10,8 @@ from commons import NERdataset, logger, init_logger
 from processor import NERProcessor
 from tqdm import tqdm
 from transformers import AdamW, get_linear_schedule_with_warmup
-from transformers.tokenization_bert import BertTokenizer
+# from transformers.tokenization_bert import BertTokenizer
+from transformers.models.bert.modeling_bert import BertModel, BertTokenizer
 from sklearn.metrics import classification_report, f1_score
 
 
