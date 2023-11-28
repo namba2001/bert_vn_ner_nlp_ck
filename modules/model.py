@@ -1,6 +1,8 @@
 from modules.featrep import FeatureRep
 from commons import Feature
-from transformers.modeling_bert import BertModel, BertPreTrainedModel, BertConfig
+# from transformers.modeling_bert import BertModel, BertPreTrainedModel, BertConfig
+from transformers.models.bert.modeling_bert import BertModel,BertForMaskedLM
+
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 import torch
